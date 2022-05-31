@@ -1,0 +1,25 @@
+@import "../../assets/style/theme.scss";
+.breadcrumb {
+    list-style: none;
+    display: flex;
+    align-items: center;
+    margin: 0;
+    padding: 0 0 10px 0;
+    border-bottom: 1px solid $gray-light;
+    &_item {
+        color: $gray-light;
+        font-size: $font-xs;
+        position: relative;
+        padding-left: 8px;
+        padding-right: 4px;
+        &:before {
+            position: absolute;
+            content: url("../../assets/icons/arrow-left.svg");
+            left: 0;
+            width: 4px;
+        }
+        &:last-child::before {
+            content: none
+        }
+    }
+}

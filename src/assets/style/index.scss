@@ -1,0 +1,61 @@
+@import "./theme.scss";
+body {
+    margin: 0;
+    overflow: hidden;
+    direction: rtl;
+    font-family: Vazir !important;
+    font-size: $font-sm;
+}
+
+a {
+    text-decoration: none !important;
+}
+
+.container {
+    max-width: 1440px;
+    min-width: 992px;
+    margin: 0 auto;
+    position: relative;
+}
+
+.row {
+    display: flex;
+    align-items: center;
+}
+
+.sideBar {
+    direction: rtl;
+    height: calc(100vh - 64px);
+    overflow: auto;
+    position: fixed;
+    scrollbar-width: none;
+    top: 32px;
+    width: 280px;
+}
+
+.main {
+    background-color: #fff;
+    flex: 1 1;
+    margin-right: 300px;
+    margin-top: 32px;
+    min-height: 100px;
+    padding: 0 0 0 1.75rem;
+    top: 0;
+    width: auto;
+}
+
+.color_dark {
+    color: $gray-dark !important;
+}
+
+.pr__55 {
+    padding-right: 55px !important;
+}
+
+.pr__15 {
+    padding-right: 15px !important;
+}
+
+.pt__20 {
+    padding-top: 15px !important;
+}
