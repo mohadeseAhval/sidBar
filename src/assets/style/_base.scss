@@ -1,0 +1,24 @@
+@mixin hover($color) {
+    color: $color;
+    transition: 0.3s;
+}
+
+@mixin flexBox() {
+    display: flex;
+    align-items: center;
+}
+
+@mixin listStyleNone() {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+@mixin content($content, $right, $top, $bottom, $left) {
+    position: absolute;
+    content: $content;
+    right: $right;
+    top: $top;
+    bottom: $bottom;
+    left: $left;
+}

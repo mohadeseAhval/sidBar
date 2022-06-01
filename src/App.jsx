@@ -1,24 +1,25 @@
-// import List from "./components/category/List";
+import React, { useState,useEffect} from "react";
+import data from "./data.json";
+import Layout from "./components/Layout";
 import ListItem from "./components/category/ListItem";
-import Breadcrumb from "./components/Breadcrumb/Breadcrumb";
-import "./assets/style/index.scss";
-import "./assets/icons/icomoon/style.scss";
-
 
 const App = () => {
+   const [loading, setLoading] = useState(true);
+   const [categories, setCategories] = useState([]);
 
-    return (       
-       <div className="container row">
-          <aside className="sideBar">
-          {/* <List/> */}
-          <ListItem/>
-          </aside>
-          <div className="main">
-            <Breadcrumb/>
-          </div>
-       </div>
+   useEffect(() => {   
+      if(loading)   {
+         setCategories(data.data);
+         setLoading(false);
+      }      
+      console.log(categories);
+  },[loading]);
+  
+    return ( 
+        <Layout>
+            <ListItem parentList={categories}/>                
+        </Layout>
     );
 };
-
 
 export default App;

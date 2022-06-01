@@ -1,4 +1,4 @@
-@import "./theme.scss";
+@import "./styles.scss";
 body {
     margin: 0;
     overflow: hidden;
@@ -19,8 +19,7 @@ a {
 }
 
 .row {
-    display: flex;
-    align-items: center;
+    @include flexBox();
 }
 
 .sideBar {

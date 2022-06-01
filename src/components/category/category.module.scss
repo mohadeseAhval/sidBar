@@ -1,4 +1,4 @@
-@import "../../assets/style/theme.scss";
+@import "../../assets/style/styles.scss";
 .title {
     &__sm {
         font-size: $font-sm;
@@ -8,8 +8,7 @@
     &__light {
         font-size: $font-sm;
         color: $gray-light;
-        display: flex;
-        align-items: center;
+        @include flexBox();
         cursor: pointer;
         .icon__right {
             font-size: 14px;
@@ -18,11 +17,9 @@
             text-align: center;
         }
         &:hover {
-            color: $gray-dark;
-            transition: 0.3s;
+            @include hover($gray-dark);
             .icon__right {
-                color: $gray-dark;
-                transition: 0.3s;
+                @include hover($gray-dark);
             }
         }
     }
@@ -30,9 +27,7 @@
 
 .list {
     &_category {
-        list-style: none;
-        padding: 0;
-        margin: 0;
+        @include listStyleNone();
         &_item {
             font-size: $font-sm;
             font-weight: bold;
@@ -41,9 +36,8 @@
             margin-top: 20px;
             margin-bottom: 20px;
             a {
+                @include flexBox();
                 color: $gray-light;
-                display: flex;
-                align-items: center;
             }
             &:last-child {
                 margin-bottom: 0;
@@ -59,14 +53,12 @@
                 text-align: center;
             }
             &:hover {
-                color: $gray-dark;
+                @include hover($gray-dark);
                 a {
-                    color: $gray-dark;
-                    transition: .3s;
+                    @include hover($gray-dark);
                 }
                 .icon {
-                    color: $gray-dark;
-                    transition: .3s;
+                    @include hover($gray-dark);
                 }
             }
             &_child {
@@ -78,20 +70,15 @@
                 padding-right: 10px;
                 position: relative;
                 &::before {
-                    position: absolute;
-                    content: "";
+                    @include content("", 0, 0, unset, unset);
                     width: 1px;
                     height: 100%;
-                    right: 0;
-                    top: 0;
                     background-color: $gray-light;
                 }
                 &:hover {
-                    color: $gray-dark;
-                    transition: .3s;
+                    @include hover($gray-dark);
                     .icon {
-                        color: $gray-dark;
-                        transition: .3s;
+                        @include hover($gray-dark);
                     }
                 }
             }
@@ -103,5 +90,11 @@
     color: $primary;
     &::before {
         background-color: $primary;
+    }
+    &:hover {
+        @include hover($primary);
+        &::before {
+            @include hover($primary);
+        }
     }
 }
