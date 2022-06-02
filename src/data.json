@@ -1,155 +1,89 @@
 {
     "data": [{
             "id": 1,
-            "link": "amlak",
+            "link": "real-estate",
             "title": "املاک",
             "parent_id": null,
             "icon": "icon-home",
             "child": [{
-                    "id": 10,
+                    "id": 2,
                     "link": "buy-residential",
                     "title": "فروش مسکونی",
                     "parent_id": 1,
                     "icon": "",
                     "child": [{
-                            "id": 12,
+                            "id": 3,
                             "link": "buy-apartment",
                             "title": "آپارتمان",
-                            "parent_id": 10,
+                            "parent_id": 2,
                             "icon": "",
                             "child": null
                         },
                         {
-                            "id": 13,
+                            "id": 4,
                             "link": "buy-villa",
                             "title": "خانه و ویلا",
-                            "parent_id": 10,
+                            "parent_id": 2,
                             "icon": "",
                             "child": null
                         },
                         {
-                            "id": 14,
+                            "id": 5,
                             "link": "buy-old-house",
                             "title": "زمین و کلنگی",
-                            "parent_id": 10,
+                            "parent_id": 2,
                             "icon": "",
                             "child": null
                         }
                     ]
                 },
                 {
-                    "id": 11,
+                    "id": 6,
                     "link": "rent-residential",
                     "title": "اجاره مسکونی",
                     "parent_id": 1,
                     "icon": "",
-                    "child": null
+                    "child": [{
+                        "id": 7,
+                        "link": "rent-apartment",
+                        "title": "آپارتمان",
+                        "parent_id": 6,
+                        "icon": "",
+                        "child": null
+                    }]
                 }
             ]
         },
         {
-            "id": 2,
-            "link": "vas",
-            "title": "وسایل نقلیه",
-            "parent_id": null,
-            "icon": "icon-car",
-            "child": null
-        },
-        {
-            "id": 3,
-            "link": "kal",
+            "id": 8,
+            "link": "electronic-devices",
             "title": "کالای دیجیتال",
             "parent_id": null,
             "icon": "icon-mobile",
             "child": [{
-                    "id": 15,
-                    "link": "buy-residential",
-                    "title": "فروش کالای دیجیتال",
-                    "parent_id": 3,
-                    "icon": "",
-                    "child": [{
-                            "id": 16,
-                            "link": "buy-apartment",
-                            "title": "کالای دیجیتال 1",
-                            "parent_id": 15,
-                            "icon": "",
-                            "child": null
-                        },
-                        {
-                            "id": 17,
-                            "link": "buy-villa",
-                            "title": "کالای دیجیتال 2",
-                            "parent_id": 15,
-                            "icon": "",
-                            "child": null
-                        },
-                        {
-                            "id": 18,
-                            "link": "buy-old-house",
-                            "title": "کالای دیجیتال 3",
-                            "parent_id": 15,
-                            "icon": "",
-                            "child": null
-                        }
-                    ]
-                },
-                {
-                    "id": 20,
-                    "link": "rent-residential",
-                    "title": "اجاره کالای دیجیتال",
-                    "parent_id": 3,
-                    "icon": "",
-                    "child": null
-                }
-            ]
-        },
-        {
-            "id": 4,
-            "link": "ash",
-            "title": "خانه و آشپزخانه",
-            "parent_id": null,
-            "icon": "icon-kitchen",
-            "child": null
-        },
-        {
-            "id": 5,
-            "link": "khad",
-            "title": "خدمات",
-            "parent_id": null,
-            "icon": "icon-brush",
-            "child": null
-        },
-        {
-            "id": 6,
-            "link": "shakh",
-            "title": "وسایل شخصی",
-            "parent_id": null,
-            "icon": "icon-watch",
-            "child": null
-        },
-        {
-            "id": 7,
-            "link": "sargarm",
-            "title": "سرگرمی و فراغت",
-            "parent_id": null,
-            "icon": "icon-dice",
-            "child": null
-        },
-        {
-            "id": 8,
-            "link": "ej",
-            "title": "اجتماعی",
-            "parent_id": null,
-            "icon": "icon-users",
-            "child": null
-        },
-        {
-            "id": 9,
-            "link": "est",
-            "title": "استخدام و کاریابی",
-            "parent_id": null,
-            "icon": "icon-briefcase",
-            "child": null
+                "id": 9,
+                "link": "mobile-tablet",
+                "title": "موبایل و تبلت",
+                "parent_id": 8,
+                "icon": "",
+                "child": [{
+                        "id": 10,
+                        "link": "mobile-phones",
+                        "title": "گوشی موبایل",
+                        "parent_id": 9,
+                        "icon": "",
+                        "child": null
+                    },
+                    {
+                        "id": 11,
+                        "link": "tablet",
+                        "title": "تبلت",
+                        "parent_id": 9,
+                        "icon": "",
+                        "child": null
+                    }
+                ]
+            }]
         }
     ]
 }

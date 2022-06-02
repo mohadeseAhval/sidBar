@@ -1,23 +1,16 @@
-import React, { useState,useEffect} from "react";
-import data from "./data.json";
+import React from "react";
+import {Route,Switch} from "react-router-dom";
+import routes from "./routs";
 import Layout from "./components/Layout";
-import ListItem from "./components/category/ListItem";
 
 const App = () => {
-   const [loading, setLoading] = useState(true);
-   const [categories, setCategories] = useState([]);
-
-   useEffect(() => {   
-      if(loading)   {
-         setCategories(data.data);
-         setLoading(false);
-      }      
-      console.log(categories);
-  },[loading]);
-  
     return ( 
         <Layout>
-            <ListItem parentList={categories}/>                
+            <Switch>
+                {routes.map((route)=>(
+                    <Route {...route}/>
+                ))}
+            </Switch>      
         </Layout>
     );
 };

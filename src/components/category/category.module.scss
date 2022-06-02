@@ -10,6 +10,8 @@
         color: $gray-light;
         @include flexBox();
         cursor: pointer;
+        margin-bottom: 20px;
+        font-weight: bold;
         .icon__right {
             font-size: 14px;
             margin-left: 10px;
@@ -87,7 +89,7 @@
 }
 
 .active {
-    color: $primary;
+    color: $primary !important;
     &::before {
         background-color: $primary;
     }

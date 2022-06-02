@@ -1,4 +1,4 @@
-import Breadcrumb from "../components/Breadcrumb/Breadcrumb";
+import Categories from "./Category/Ctegories";
 import "../assets/style/index.scss";
 import "../assets/icons/icomoon/style.scss";
 
@@ -6,13 +6,12 @@ import "../assets/icons/icomoon/style.scss";
 const Layout = ({children}) => {
     return (       
           <div className="container row">
-          <aside className="sideBar">
-          {children}
-
-          </aside>
-          <div className="main">
-            <Breadcrumb/>
-          </div>
+            <aside className="sideBar">
+                <Categories/>
+            </aside>
+            <div className="main">                
+                {children}
+            </div>
        </div>
     );
 };
